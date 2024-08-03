@@ -790,7 +790,7 @@ static int _sec_debug_summary_init(void)
 }
 
 #ifdef CONFIG_SEC_DEBUG_SUMMARY_DRIVER
-static int sec_debug_summary_probe(struct platform_device *pdev)
+static __init int sec_debug_summary_probe(struct platform_device *pdev)
 {
 	int err = _sec_debug_summary_init();
 
